@@ -65,6 +65,12 @@ img {
     color: var(--accent);
 }
 
+/* --- Announcement Bar --- */
+.announcement-bar { background: linear-gradient(90deg, #0066cc, #00d4ff, #0066cc); background-size: 200% auto; animation: gradientShift 4s linear infinite; padding: 0.6rem 0; text-align: center; font-size: 0.875rem; font-weight: 500; }
+.announcement-bar p { margin: 0; color: #fff; }
+.announcement-bar a { color: #fff; font-weight: 700; text-decoration: underline; }
+@keyframes gradientShift { 0% { background-position: 0% center; } 100% { background-position: 200% center; } }
+
 /* --- Animations --- */
 .animate-in {
     opacity: 0;
@@ -214,6 +220,9 @@ img {
     width: 100%;
 }
 
+.nav-phone { color: rgba(255,255,255,0.7); font-size: 0.875rem; text-decoration: none; display: flex; align-items: center; gap: 0.4rem; }
+.nav-phone:hover { color: #00d4ff; }
+
 .nav-cta {
     padding: 10px 24px !important;
     background: var(--accent) !important;
@@ -325,6 +334,9 @@ img {
     margin-bottom: 24px;
 }
 
+.hero-title .accent { background: linear-gradient(90deg, #00d4ff, #0099ff, #7c3aed, #00d4ff); background-size: 300% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradientText 4s linear infinite; }
+@keyframes gradientText { 0% { background-position: 0% center; } 100% { background-position: 300% center; } }
+
 .hero-sub {
     font-size: 1.15rem;
     color: var(--text-secondary);
@@ -340,6 +352,9 @@ img {
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
+
+.hero-trust { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.5rem; justify-content: center; }
+.trust-badge { font-size: 0.8rem; color: rgba(255,255,255,0.6); display: flex; align-items: center; gap: 0.3rem; }
 
 .hero-stats {
     display: flex;
