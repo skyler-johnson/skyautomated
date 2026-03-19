@@ -224,20 +224,10 @@ img {
 .nav-phone { color: rgba(255,255,255,0.7); font-size: 0.875rem; text-decoration: none; display: flex; align-items: center; gap: 0.4rem; }
 .nav-phone:hover { color: #00d4ff; }
 
-.nav-btn {
-    padding: 10px 20px !important;
-    border: 1px solid rgba(0, 212, 255, 0.4) !important;
-    border-radius: 50px !important;
-    background: rgba(0, 212, 255, 0.06) !important;
-    transition: border-color 0.2s, background 0.2s, box-shadow 0.2s !important;
-    font-weight: 600 !important;
+.nav-links .btn {
+    padding: 8px 18px !important;
+    font-size: 0.9rem !important;
 }
-.nav-btn:hover {
-    border-color: var(--accent) !important;
-    background: rgba(0, 212, 255, 0.15) !important;
-    box-shadow: 0 0 15px rgba(0, 212, 255, 0.2) !important;
-}
-.nav-btn::after { display: none !important; }
 
 .nav-cta {
     padding: 10px 24px !important;
