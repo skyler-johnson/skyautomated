@@ -290,6 +290,19 @@ img {
     overflow: hidden;
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 500px;
+    background: radial-gradient(ellipse at center, rgba(0, 100, 255, 0.12) 0%, rgba(0, 212, 255, 0.06) 40%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
 .hero-bg {
     position: absolute;
     inset: 0;
@@ -1253,3 +1266,12 @@ img {
 .expectation-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-primary); }
 .expectation-card p { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.7; }
 @media (max-width: 768px) { .expectations-grid { grid-template-columns: 1fr; } }
+
+/* Gradient section dividers */
+.services::before, .how-it-works::before, .pricing::before, .expectations::before, .faq::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.3), transparent);
+    margin-bottom: 6rem;
+}
