@@ -223,6 +223,18 @@ img {
 .nav-phone { color: rgba(255,255,255,0.7); font-size: 0.875rem; text-decoration: none; display: flex; align-items: center; gap: 0.4rem; }
 .nav-phone:hover { color: #00d4ff; }
 
+.nav-btn {
+    padding: 8px 16px !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    border-radius: 8px !important;
+    transition: border-color 0.2s, background 0.2s !important;
+}
+.nav-btn:hover {
+    border-color: var(--accent) !important;
+    background: rgba(0, 212, 255, 0.08) !important;
+}
+.nav-btn::after { display: none !important; }
+
 .nav-cta {
     padding: 10px 24px !important;
     background: var(--accent) !important;
